@@ -1,0 +1,154 @@
+@charset "EUC-KR";
+.positioner {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.shadowebox {
+    width : 500px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.logowrapper {
+    background: #0ca678;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    color: white;
+    font-family: 'Rajdhani';
+   	width:30px;
+   	height: 30px;
+    letter-spacing: 5px;
+    text-decoration: none;
+
+}
+.contents{
+    background-color: white;
+    padding:1rem;
+    height: auto;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #343a40;
+    margin-bottom: 1rem;
+}
+
+.table {
+    display: block;
+    position: relative;
+    margin-top: 0.85rem;
+}
+
+.row {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 1rem;
+    color: #868e96;
+    margin-bottom: 0.25rem;
+}
+
+.Input {
+    width: 100%;
+    border: 1px solid #dee2e6;
+    outline: none;
+    border-radius: 0px;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.Input::placeholder {
+    color: #dee2e6;
+}
+
+.submit {
+    margin-top: 1rem;
+    padding-top: 0.6rem;
+    border: none;
+    padding-bottom: 0.5rem;
+    background: #12b886;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    transition: .2s all;
+}
+
+.submit:hover {
+    background: #20c997;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.submit:active {
+    background: #0ca678;
+}
+
+.wrapper {
+    position: relative;
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.reset {
+    color: #868e96;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+.reset:hover {
+    color:#495057
+}
+
+.checkbox-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type=checkbox] + label {
+    display: block;
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+  }
+  
+input[type=checkbox] {
+    display: none;
+}
+  
+input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 0.1em solid #000;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    margin-right: 0.2em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+}
+  
+input[type=checkbox] + label:active:before {
+    transform: scale(0);
+}
+  
+input[type=checkbox]:checked + label:before {
+    background-color: MediumSeaGreen;
+    border-color: MediumSeaGreen;
+    color: #fff;
+}
